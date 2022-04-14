@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <title>What the Weather</title>
+        <meta name="viewport" content="width=device-width, inital-scale=1">
+    </head>
+
+
+    <body>
+
+        <div>
+            <h1>Weclome to What the Weather</h1>
+
+            <button id=retLocationButton type="button"">Get My Location!</button>
+            <h2 id="displayLocation">Your Current Location: </h2>
+
+            <h2>Or Choose Your City</h2>
+            <form id="selectCity">
+                <input list="cities">
+                <datalist id="cities">
+                    <option value="Paris, France"></option>
+                    <option value="Beijing, China"></option>
+                    <option value="Tokyo, Japan"></option>
+                    
+                </datalist>
+            </form>
+            <br>
+            <button id="getWeather" type="button" onclick="getWeather(),renderWeather()">Get the Weather</button>
+
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </body>
+
+
+
+
+    <script src="scripts.js"></script>
+
+
+
+
+
+
+
+
+</html>
