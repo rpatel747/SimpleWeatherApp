@@ -4,29 +4,63 @@
     <head>
         <title>What the Weather</title>
         <meta name="viewport" content="width=device-width, inital-scale=1">
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="styles.css">
     </head>
 
 
     <body>
 
-        <div>
+        <div >
             <h1>Weclome to What the Weather</h1>
 
+            <h2>Weather for Top 5 Cities</h2>
+
+            
+            <div id="topFiveList"></div>
+
+            <h2 id="displayLocation">Your Current Location: (Please press the button) </h2>
             <button id=retLocationButton type="button"">Get My Location!</button>
-            <h2 id="displayLocation">Your Current Location: </h2>
 
             <h2>Or Choose Your City</h2>
             <form id="selectCity">
-                <input list="cities">
-                <datalist id="cities">
-                    <option value="Paris, France"></option>
-                    <option value="Beijing, China"></option>
-                    <option value="Tokyo, Japan"></option>
-                    
-                </datalist>
+                <select name="cityName" id="cityName">
+                    <option value="null"></option>
+                    <option value="bejing_china">Bejing, China</option>
+                    <option value="london_uk">London, United Kingdom</option>
+                    <option value="newYorkCity_usa">New York City, United States</option>
+                    <option value="hongKong_china">Hong Kong, China</option>
+                    <option value="dubai_UAE">Dubai, UAE</option>
+                    <option value="rome_italy">Rome, Italy</option>
+                    <option value="istanbul_turkey">Istanbul, Turkey</option>
+                    <option value="mexicoCity_mexico">Mexico City, Mexico</option>
+                    <option value="moscow_russia">Moscow, Russia</option>
+                    <option value="sanFrancisco_USA">San Franscisco, United States</option>
+                    <option value="losAngeles_USA">Los Angeles, United States</option>
+                    <option value="barcelona_spain">Barcelona, Spain</option>
+                    <option value="madrid_spain">Madrid, Spain</option>
+                    <option value="sydney_australia">Sydney, Austalia</option>
+                    <option value="lisbon_portugal">Lisbon, Portugal</option>
+                    <option value="vienna_austria">Vienna, Austria</option>
+                    <option value="taipei_taiwan">Taipei, Taiwan</option>
+                    <option value="paris_france">Paris, France</option>
+                    <option value="tokyo_japan">Tokyo, Japan</option>
+                </select>
+                <button id="getWeather" type="button">Get the Weather</button>
             </form>
             <br>
-            <button id="getWeather" type="button" onclick="getWeather(),renderWeather()">Get the Weather</button>
+
+
+            <div class="weatherCard">
+                
+                <h2 id="searchCityName"></h2>
+                <h2 id="weatherIcon"></h2>
+                <h2 id="weatherTemp"></h2>
+                <h2 id="weatherHumidity"></h2>
+                <h2 id="weatherWindSpeed"></h2>
+
+
+            </div>
 
         </div>
 
@@ -50,7 +84,7 @@
 
     <script src="scripts.js"></script>
 
-
+    
 
 
 
