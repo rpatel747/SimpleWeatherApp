@@ -2,19 +2,55 @@ h1,h2,h3 {
     text-align: center;
 }
 
+h4 {
+    color:#67597A;
+}
+
 body {
     font-family: Arial, Helvetica, sans-serif;
     position: relative;
+    margin: 0 auto;
+    background-color: #CEEDDB;
 }
 
 
 .weatherCard {
     display: inline-grid;
-    color:red;
-    grid-column-start: 1;
-    grid-column-end: 3;
-    width:20%;
+    color:#67597A;
+    width: 400px;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     font-size:12px;
     
+    padding: 40px;
+    border-radius: 50px;
+    margin: 30px;
+    text-align: center;
+
+}
+
+
+.weatherCard:hover{
+    transform: translateY(-20px) translateX(-20px);
+}
+
+
+.weatherCardSelect{
+    display: inline-grid;
+    color:#67597A;
+    width: 400px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    font-size:12px;
+    
+    padding: 40px;
+    border-radius: 50px;
+    margin: 30px;
+
+}
+
+.weatherCardSelect:hover{
+    transform: translateY(-20px) translateX(-20px);
+}
+
+#chosenBox{
+    text-align: center;
 }
