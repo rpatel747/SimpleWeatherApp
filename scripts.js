@@ -78,7 +78,7 @@ document.getElementById("getWeather").onclick = () => {
 
 async function getWeather() {
 
-    let url = "https://api.openweathermap.org/data/2.5/weather?lat="+lat+"&lon="+lon+"&appid=0fc1ec3bf4c4956375b1399129d42c3f";
+    let url = "https://api.openweathermap.org/data/2.5/weather?lat="+lat+"&lon="+lon+"&appid=";
 
     try {
         let response = await fetch(url);
